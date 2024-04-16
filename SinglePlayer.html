@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>SinglePlayer</title> 
+		<link rel="stylesheet" href="style.css">
+		<script src="SinglePlayer.js"></script>
+	</head>
+	
+	<body>
+	
+		<nav>
+			<a href="index.html" id="left_link">Home Page</a>
+			<a href="how_to_play.html" id="centre_link">How to Play</a>
+			<a href="high_or_low.html" id="right_link">Higher or Lower?</a>
+		</nav>
+	
+	
+		<h2> Dealer: <span id="dealer-total"></span></h2> 
+		<div id="dealer-cards">
+			<img id ="hidden-card" src="./cards/back.png">
+		</div>
+	
+		<h2> Player: <span id="player-total"></span></h2> 
+		<div id="players-cards">
+			
+		</div>
+		
+		<br>
+		
+
+		<p>Current Bet: £<span id="bet-amount">0</span></p>
+		<p>Bank Balance: £<span id="bank-balance">1000</span></p>
+
+
+		<button id="bet-10" onclick="place_bet(10)">Bet £10</button>
+		<button id="bet-20" onclick="place_bet(20)">Bet £20</button>
+		<button id="bet-30" onclick="place_bet(30)">Bet £30</button>
+		<button id="bet-40" onclick="place_bet(40)">Bet £40</button>
+		<button id="bet-50" onclick="place_bet(50)">Bet £50</button>
+		
+		<button id="new-game">New Game</button>
+		<button id="new-round">New Round</button>
+		<button id="stand">Stand</button>
+		<button id="hit">Hit</button>
+		
+		
+		
+		<p id="results"></p>
+		
+	</body>
+
+</html>

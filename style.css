@@ -1,0 +1,241 @@
+body
+{
+	font-family: Aptos, sans-serif;
+	background-color: #0a6307;
+	text-align: center;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 100px;
+	margin-top: 60px;
+	color: white;
+}
+
+h2
+{
+	color: white;
+	clear: both;
+}
+
+p 
+{
+	color: white;
+}
+
+img
+{
+	width: 100px;
+	height: 100px;
+}
+
+.links 
+{
+	display: block;
+	text-align: center;
+	font-size: 50px;
+	padding-top: 15px;
+	clear: both;
+}
+
+.link_spacing
+{
+	padding-bottom:25px;
+}
+
+#card-games
+{
+	float:left;
+}
+
+
+
+.games 
+{
+	float: left;
+	text-align: center;
+}
+
+#how_to
+{
+	text-align: center;
+	color: black;
+}
+
+nav 
+{
+	background-color: red;
+	
+	display: flex;
+	color: black;
+	align-items: center;
+	padding: 10px;
+}
+
+#left_link
+{
+	margin-right:auto;
+	color:white;
+	text-decoration:none;
+}
+
+#left_link:hover
+{
+	text-decoration:underline;
+}
+
+#centre_link
+{
+	margin:0 auto;
+	color:white;
+	text-decoration:none;
+}
+
+#centre_link:hover
+{
+	text-decoration:underline;
+}
+
+#right_link
+{
+	margin-left:auto;
+	color:white;
+	text-decoration:none;
+}
+
+#right_link:hover
+{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+#top_link
+{
+	color:white;
+	text-decoration:none;
+}
+
+#top_link:hover
+{
+	text-decoration:underline;
+}
+
+#middle_link
+{
+	color:white;
+	text-decoration:none;
+}
+
+#middle_link:hover
+{
+	text-decoration:underline;
+}
+
+#bottom_link
+{
+	margin-left:auto;
+	color:white;
+	text-decoration:none;
+}
+
+#bottom_link:hover
+{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+#dealer-cards img 
+{
+	height: 200px;
+	width:125px;
+	margin: 10px;
+}
+
+
+#players-cards img 
+{
+	height: 200px;
+	width:125px;
+	margin: 10px;
+}
+
+#hit, #stand
+{
+	width: 125px; 
+	height: 75px; 
+	font-size: 35px;
+}
+
+#new-round, #new-game
+{
+	width: 125px; 
+	height: 75px; 
+	font-size: 25px;
+}
+
+#hit, #stand, #new-round, #new-game
+{
+	float: right;
+	margin-right: 75px;
+} 
+
+#bet-10, #bet-20, #bet-30, #bet-40, #bet-50
+{
+	float: left;
+	width: 125px;
+	height: 75px;
+	font-size: 25px;
+}
+
+#bet_amount, #bank_balance, #results
+{
+	font-size: 35px; 
+}
+
+
+
+
+
+
+
+#game-cards img
+{
+	height: 200px;
+	width:125px;
+	margin: 10px;
+}
+
+#higher, #lower
+{
+	height: 75px;
+	width: 125px;
+	font-size: 35px;
+}
+
+#next
+{
+	height: 75px;
+	width: 125px;
+	font-size: 25px;
+}
+
+
+
+
+
+

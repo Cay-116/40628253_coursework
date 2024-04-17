@@ -178,7 +178,7 @@ function stand()
 	//prevents the player from drawing further
     can_hit = false;
 	//Changes the hidden card to face up
-    document.getElementById("hidden-card").src = "./cards/" + hidden + ".png";
+    //document.getElementById("hidden-card").src = "./cards/" + hidden + ".png";
     end_round();
 }
 
@@ -247,6 +247,8 @@ function new_game()
 //Deals with the ending of the round, and win/loss conditions
 function end_round() 
 {
+	//Changes the hidden card to face up
+    document.getElementById("hidden-card").src = "./cards/" + hidden + ".png";
 	//Defines an empty string, that will be updated depending on the outcome
     let message = "";
 

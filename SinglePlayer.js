@@ -279,7 +279,7 @@ function end_round()
 	}
 	
 	//Player victory conditions
-	if (player_sum < 21 && dealer_sum > 21)
+	if (player_sum <= 21 && dealer_sum > 21)
 	{
 		message = "Player wins";
 		bank += bet_amount;

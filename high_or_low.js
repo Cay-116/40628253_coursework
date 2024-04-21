@@ -22,7 +22,9 @@ window.onload = function ()
 	//Calls the higher() function when the "higher button is clicked
 	document.getElementById("higher").addEventListener("click", higher);
 	//Calls the lower() function when the "lower" button is clicked
-    document.getElementById("lower").addEventListener("click", lower);
+    	document.getElementById("lower").addEventListener("click", lower);
+	//Calls the equal() function when the "lower" button is clicked
+    	document.getElementById("same").addEventListener("click", equal);
 	//Calls the next() function when the "next" button is clicked
 	document.getElementById("next").addEventListener("click", next);
 
@@ -173,7 +175,30 @@ function lower()
 	}
     document.getElementById("results").innerText = message ;
 }
+
+function equal()
+{
+	let message = "";
 	
+	if(can_guess == false)
+	{
+		return;
+	}
+	if(hidden_card_value == card_value)
+	{
+		win_streak += 1;
+		message = "Current Streak: " + win_streak;
+		can_guess = false;
+	}
+	if(hidden_card_value != card_value)
+	{
+		win_streak = 0;
+		message = "Current Streak: 0";
+		can_guess = false;
+	}
+	document.getElementById("results").innerText = message;
+}
+
 //Draws a new card
 function next()
 {

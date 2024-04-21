@@ -45,7 +45,7 @@ function build_deck()
 			deck.push(values[x] + "-" + suits[i]);
 		}
 	}
-	console.log(deck);
+	//console.log(deck);
 }
 
 
@@ -61,7 +61,7 @@ function shuffle_deck()
         deck[i] = deck[x];
         deck[x] = temp;
     }
-	console.log(deck)
+	//console.log(deck)
 }
 
 function start()
@@ -69,14 +69,14 @@ function start()
 	hidden = deck.pop()
 	
 	hidden_card_value += get_value(hidden);
-	console.log(hidden_card_value);
+	//console.log(hidden_card_value);
 	
 	let card_img = document.createElement("img");
     let card = deck.pop();
     card_img.src = "./cards/" + card + ".png";
     card_value += get_value(card);
     document.getElementById("game-cards").append(card_img);
-	console.log(card_value);
+	//console.log(card_value);
 }
 
 //Splits the cards by the dash in the file name
@@ -183,6 +183,9 @@ function next()
 	card_value = 0;
 	
 	can_guess = true;
+
+	build_deck();
+	shuffle_deck();
 	start();
 }
 	
